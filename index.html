@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laboratorio Virtual: Separación de Mezclas | 6° Grado</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Tipografía moderna e iconos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Encabezado Principal -->
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-area">
+        <span class="badge">Ciencias Naturales • 6° Grado</span>
+        <h1>🔬 Laboratorio Virtual: Separación de Mezclas</h1>
+      </div>
+      <div class="score-board">
+        <div class="score-card">
+          <span class="score-label">Aciertos:</span>
+          <span id="score" class="score-value">0</span>
+        </div>
+        <div class="score-card">
+          <span class="score-label">Experimentos:</span>
+          <span id="completed-count" class="score-value">0 / 5</span>
+        </div>
+        <button id="btn-reset" class="btn-secondary" title="Reiniciar laboratorio">🔄 Reiniciar</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenedor del Simulador -->
+  <main class="main-container">
+    
+    <!-- Paso 1: Selección de Mezcla -->
+    <section class="panel panel-left">
+      <h2>1. Selecciona una Muestra</h2>
+      <p class="instruction">Observa cada tubo de ensayo e identifica los componentes que forman la mezcla:</p>
+      
+      <div class="mixture-list" id="mixture-list">
+        <!-- Generado dinámicamente con JavaScript -->
+      </div>
+    </section>
+
+    <!-- Paso 2 y 3: Banco de Trabajo y Simulación -->
+    <section class="panel panel-center">
+      <h2>2. Banco de Experimentación</h2>
+      
+      <div class="workbench">
+        <div class="workbench-status" id="workbench-status">
+          <p>🧪 Selecciona una mezcla de la izquierda para comenzar el experimento.</p>
+        </div>
+
+        <!-- Animación del experimento -->
+        <div class="experiment-viewport" id="experiment-viewport">
+          <div class="apparatus-container" id="apparatus-container">
+            <div class="placeholder-beaker">
+              <span class="beaker-icon">⚗️</span>
+              <p>Mesa de trabajo limpia</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Panel de Mensaje Pedagógico -->
+        <div class="feedback-card" id="feedback-card" style="display: none;">
+          <div class="feedback-header">
+            <span id="feedback-icon" class="feedback-icon">💡</span>
+            <h3 id="feedback-title">Análisis Científico</h3>
+          </div>
+          <p id="feedback-text"></p>
+          <div class="property-tag" id="property-tag"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Paso 3: Selección del Método -->
+    <section class="panel panel-right">
+      <h2>3. Elige el Método</h2>
+      <p class="instruction">¿Qué técnica física es la adecuada para separar esta mezcla?</p>
+      
+      <div class="tools-grid" id="tools-grid">
+        <!-- Herramientas generadas por JS -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>Desarrollado para el aprendizaje activo de Ciencias Naturales • Proyecto de Código Abierto</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

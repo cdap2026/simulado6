@@ -1,0 +1,12 @@
+
+---
+
+### 5. `.gitignore`
+
+```text
+.DS_Store
+Thumbs.db
+node_modules/
+*.log
+.vscode/
+.idea/
